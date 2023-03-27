@@ -1,0 +1,75 @@
+/* purple J: 3B19A3 
+    blue Z: 2E42A3
+    green: */
+body {
+  margin: 0;
+  background-color: #a47183;
+}
+
+#jamie-pic{
+ height:70vh;
+ width:auto;
+ float:right;
+ margin-top: 20vh;
+}
+
+.nav-logo{
+  float:left;
+  position:relative;
+}
+#home-logo{
+    position:relative;
+    width:2vw;
+    height:5vh;
+    padding-top:2px;
+    margin-top:1vh;
+    margin-bottom:1vh;
+    margin-left:3vw;
+    z-index:1;
+
+}
+.circleBehind{
+    position:relative;
+    border-radius: 50%;
+    height:2vh;
+    width:2vw;
+    background-color: rgb(230, 222, 240);
+    z-index:0;
+}
+
+ul.topnav {
+    font-size:large;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  ul.topnav li {
+      float:left;
+  }
+  
+  ul.topnav li a {
+    display: block;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(129, 131, 151);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover:not(.active) {background-color: #b0c0b1;}
+  
+  ul.topnav li a.active {
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: rgb(129, 131, 151);
+  }
+  
+  ul.topnav li.right {float: right;}
+  
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+  }
