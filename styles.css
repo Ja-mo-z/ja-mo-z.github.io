@@ -1,75 +1,79 @@
 /* purple J: 3B19A3 
     blue Z: 2E42A3
     green: */
+html{
+  height:100%;
+}
 body {
   margin: 0;
-  background-color: #a47183;
+  /* font: bold 14px/1.4 'Times New Roman', arial, sans-serif; */
+  background: linear-gradient(#cff6f8, #FFFFFF);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-#jamie-pic{
- height:70vh;
- width:auto;
- float:right;
- margin-top: 20vh;
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+  color:black;
+  margin:0 8rem;
 }
-
-.nav-logo{
-  float:left;
+.main{
   position:relative;
 }
-#home-logo{
-    position:relative;
-    width:2vw;
-    height:5vh;
-    padding-top:2px;
-    margin-top:1vh;
-    margin-bottom:1vh;
-    margin-left:3vw;
-    z-index:1;
+#my-face{
+  left: 20rem;
+  top:10rem;
+  position:absolute;
+}
+#bg-purple-shape{
+  right: 0;
+  position:absolute;
+  top:-10rem;
+}
+#bg-blue-triangle{
+  left:0rem;
+  top: 60rem;
+  position:absolute;
+}
+#bg-green-ellipse{
+  right:0;
+  top: 125rem;
+  position:absolute;
+}
+.first{
+  position:relative;
 
 }
-.circleBehind{
-    position:relative;
-    border-radius: 50%;
-    height:2vh;
-    width:2vw;
-    background-color: rgb(230, 222, 240);
-    z-index:0;
+.name{
+  top:12rem;
+  position:absolute;
+}
+.first p{
+  color:white;
+  font-size:100px;
+  margin:0;
+  padding-left:60rem;
+
+}
+.firstname{
+  margin:0;
+
+}
+.lastname{
+  margin:0;
+  margin-left:10rem;
+  /* MARGIN NOT WORKING RIGHT NOW */
 }
 
-ul.topnav {
-    font-size:large;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-  }
-  
-  ul.topnav li {
-      float:left;
-  }
-  
-  ul.topnav li a {
-    display: block;
-    text-decoration-line: underline;
-    text-decoration-color: rgb(129, 131, 151);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  ul.topnav li a:hover:not(.active) {background-color: #b0c0b1;}
-  
-  ul.topnav li a.active {
-    text-decoration-line: underline;
-    text-decoration-thickness: 3px;
-    text-decoration-color: rgb(129, 131, 151);
-  }
-  
-  ul.topnav li.right {float: right;}
-  
-  @media screen and (max-width: 600px) {
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
-  }
