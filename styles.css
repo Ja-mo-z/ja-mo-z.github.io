@@ -10,6 +10,7 @@ body {
   background: linear-gradient(#cff6f8, #FFFFFF);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 100vh;
 }
 a{
   text-decoration: none;
@@ -37,6 +38,7 @@ a{
   top:10rem;
   position:absolute;
 }
+
 #bg-purple-shape{
   right: 0;
   position:absolute;
@@ -59,21 +61,37 @@ a{
 .name{
   top:12rem;
   position:absolute;
+  font-size:100px;
 }
 .first p{
   color:white;
-  font-size:100px;
   margin:0;
   padding-left:60rem;
 
 }
 .firstname{
   margin:0;
+  font-size:150px;
 
 }
 .lastname{
   margin:0;
-  margin-left:10rem;
+  margin-left:20rem;
+  border: 1px solid transparent;
   /* MARGIN NOT WORKING RIGHT NOW */
 }
 
+.initial-description{
+  font-size:25px;
+  position:absolute;
+  top:30rem;
+}
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgb(41, 22, 109);
+  text-align: center;
+}
