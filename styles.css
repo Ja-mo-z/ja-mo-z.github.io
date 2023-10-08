@@ -1,18 +1,18 @@
 /* purple J: 3B19A3 
     blue Z: 2E42A3
     green: */
-html{
-  height:100%;
+html {
+  height: 100%;
 }
 body {
   margin: 0;
   /* font: bold 14px/1.4 'Times New Roman', arial, sans-serif; */
-  background: linear-gradient(#cff6f8, #FFFFFF);
+  background: linear-gradient(#cff6f8, #ffffff);
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
 }
-a{
+a {
   text-decoration: none;
   cursor: pointer;
 }
@@ -27,68 +27,70 @@ a{
   display: inline-block;
   font-size: 20px;
   padding: 20px;
-  color:black;
-  margin:0 8rem;
+  color: black;
+  margin: 0 8rem;
 }
-.main{
-  position:relative;
+.main {
+  position: relative;
 }
-#my-face{
+#my-face {
   left: 20rem;
-  top:10rem;
-  position:absolute;
+  top: 10rem;
+  position: absolute;
 }
 
-#bg-purple-shape{
+#bg-purple-shape {
   right: 0;
-  position:absolute;
-  top:-10rem;
+  position: absolute;
+  top: -10rem;
 }
-#bg-blue-triangle{
-  left:0rem;
+#bg-blue-triangle {
+  left: 0rem;
   top: 60rem;
-  position:absolute;
+  position: absolute;
 }
-#bg-green-ellipse{
-  right:0;
+#bg-green-ellipse {
+  right: 0;
   top: 125rem;
-  position:absolute;
+  position: absolute;
 }
-.first{
-  position:relative;
-
+.first {
+  position: relative;
 }
-.name{
-  top:12rem;
-  position:absolute;
-  font-size:100px;
+.name {
+  top: 12rem;
+  position: absolute;
+  font-size: 100px;
 }
-.first p{
-  color:white;
-  margin:0;
-  padding-left:60rem;
-
+.first p {
+  color: white;
+  margin: 0;
+  padding-left: 60rem;
 }
-.firstname{
-  margin:0;
-  font-size:150px;
-
+.firstname {
+  margin: 0;
+  font-size: 150px;
 }
-.lastname{
-  margin:0;
-  margin-left:20rem;
+.lastname {
+  margin: 0;
+  margin-left: 20rem;
   border: 1px solid transparent;
   /* MARGIN NOT WORKING RIGHT NOW */
 }
 
-.initial-description{
-  font-size:25px;
-  position:absolute;
-  top:30rem;
+.initial-description {
+  font-size: 25px;
+  position: absolute;
+  top: 30rem;
+}
+.highlights {
+  position: absolute;
+  top: 60rem;
+  text-align: center;
 }
 
-.footer{
-  position: fixed;
+.footer {
+  /* position: fixed; */
   left: 0;
   bottom: 0;
   width: 100%;
