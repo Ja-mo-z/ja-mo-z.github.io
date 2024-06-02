@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <title>Web Systems</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <body>
+
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large" onclick="close_sidebar()"><img src="../images/books-menu.png"
+                    style="width:45px;"> </button>
+            <a href="../index.html" class="w3-bar-item w3-button">Archive</a>
+            <a href="#" class="w3-bar-item w3-button">Web Systems</a>
+            <a href="./operating-systems.html" class="w3-bar-item w3-button">Operating Systems</a>
+        </div>
+
+        <div id="main">
+
+            <div class="header">
+
+                <button id="openNav" class="w3-button" onclick="open_sidebar()"><img src="../images/books-menu.png"
+                        style="width:45px;"></button>
+                <div class="w3-container">
+                    <h1>Web Systems</h1>
+                </div>
+            </div>
+
+
+        </div>
+
+        </div>
+
+
+
+        </div>
+
+        <script>
+            function open_sidebar() {
+                document.getElementById("main").style.marginLeft = "25%";
+                document.getElementById("mySidebar").style.width = "25%";
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("openNav").style.display = 'none';
+            }
+            function close_sidebar() {
+                document.getElementById("main").style.marginLeft = "0%";
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("openNav").style.display = "inline-block";
+            }
+        </script>
+
+    </body>
+    <footer>
+        <a target="_blank" href="https://icons8.com/icon/42366/books">Books</a> icon by <a target="_blank"
+            href="https://icons8.com">Icons8</a>
+    </footer>
+
+</html>

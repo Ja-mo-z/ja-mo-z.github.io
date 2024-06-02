@@ -13,170 +13,73 @@ Resources: https://www.makeuseof.com/responsive-navigation-bar-using-html-and-cs
 
     <head>
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="title" content="Jamie Zhou" />
-        <meta name="description" content="The website of Jamie Zhou" />
+        <meta name="title" content="Jamie Zhou's Portfolio" />
+        <meta name="description" content="Jamie Zhou's Portfolio" />
         <meta name="author" content="Jamie Zhou">
         <meta property="og:url" content="https://Ja-mo-z.github.io/">
-        <title>Jamie Zhou's Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Homemade+Apple&family=Jacques+Francois&family=Trispace:wght@300&display=swap"
-            rel="stylesheet">
+        <title>An Archive of Jamie Zhou</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../style/index-style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
     </head>
 
     <body>
-        <ul class="nav">
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#home"><img id="home-logo" src="images/JZGraphic.svg" height="50px" width="50px" /></a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
+        <div class="home-header">
+            <div class="home-title">
+                <h1 style="font-size: 100px; margin:0px;">An Archive In Progress</h1>
+                <h3 style="font-size: 30px; float:right;">of Jamie Zhou</h3>
+            </div>
+            <div class="home-short-intro">
+                <div class="image-container">
+                    <img src="./images/jamie_with_statue.jpg" alt="Image of Jamie posing next to a clay statue">
+                </div>
+
+                <p class="introduction">
+
+                    Hi there! I'm Jamie, a senior at the University of Michigan, double majoring in Computer Science
+                    and Film. I'm passionate about creating
+                    innovative and impactful experiences that blend technology and storytelling. With a strong
+                    foundation in both CS and
+                    film, I bring a unique perspective to projects, bridging the gap between creativity and technical
+                    execution.
+                    <!-- I've been heavily involved in a variety of extended reality (XR) projects, from virtual reality
+                    films to interactive
+                    experiences. These projects have allowed me to explore the possibilities of immersive storytelling
+                    and push the
+                    boundaries of traditional media. I thrive in collaborative environments where I can contribute my
+                    technical skills while
+                    also leveraging my creative instincts to bring ideas to life.
+                    I'm excited about the opportunity to work on cutting-edge projects and contribute to pushing the
+                    boundaries of what's
+                    possible in technology and entertainment. Let's create something cool together! -->
+                </p>
+            </div>
+        </div>
+
+
         <div class="main">
-            <div class="bg">
-                <img id="bg-purple-shape" src="images/Purple Shapes.png" width="100%" />
-                <img id="bg-blue-triangle" src="images/Blue Polygon.png" width="70%" />
-                <img id="bg-green-ellipse" src="images/Green Ellipse.png" />
+            <!-- <h1>Table of Contents</h1> -->
+
+            <div class="table-of-contents">
+                <script src="./scripts/script.js"></script>
 
             </div>
-            <div class="first">
-                <div class="me">
-                    <img id="my-face" src="images/JamieRectangles.png" />
-
-                </div>
-                <div class="name">
-                    <p class="firstname">JAMIE</p>
-                    <p class="lastname">ZHOU</p>
-                </div>
-                <div class="initial-description">
-                    <p>University of Michigan - Ann Arbor</p>
-                    <p>College of Literature, Science, and Art Undergraduate</p>
-                    <p>Computer Science BS</p>
-                    <p>Film, Television, and Media BS</p>
-                </div>
-
-            </div>
-
-
         </div>
-        <div class="highlights">
-            <h1>Project Highlights</h1>
-            <div class="videos">
-                <div class="video-info">
-                    <p>https://youtu.be/CDE8brlaWrQ</p>
-                    <iframe width="560" height="315" src="https://youtu.be/CDE8brlaWrQ" frameborder="0"
-                        allowfullscreen></iframe>
-                    <h3 class="project-title">
-                        Mission Control Center
-                    </h3>
-                    <p class="project-description">
-                        October 2022 - May 2023
-                        Presenting the Mission Control Center implemented by Aileen Ji, Jamie Zhou, Atul Gera, Izzy
-                        Donoghue, and Rushil Saha.
 
-                        The Mission Control Center was created for the NASA SUITS challenge. It is a website that
-                        displays astronaut vitals,
-                        location of astronauts and landmarks, communication, and navigation. It is built with React.js
-                        on the frontend, and
-                        Node.js/Websocket on the backend, receiving telemetry stream from two Microsoft HoloLens.
-
-                    </p>
-                    <p class="project-skills">
-                        Technologies utilized in the making of the project:
-                        Node.js
-                        React.js
-                        WebSocket
-                        Visual Studio Code
-                        Github Version Control
-                        Bootstrap
-                    </p>
-                    <p class="project-contributions">
-                    <ul>
-                        <li>Scrum master of vitals feature team</li>
-                        <li>Implemented main sidebar and vitals side bar</li>
-                        <li>Created the functionality of waypoint creation and deletion</li>
-                        <li>Collaborated with UI/UX to design website</li>
-
-                    </ul>
-                    </p>
-
-                </div>
-                <p>https://www.youtube.com/watch?v=ovBVUvKrnDE&feature=youtu.be</p>
-
-                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=ovBVUvKrnDE&feature=youtu.be"
-                    frameborder="0" allowfullscreen></iframe>
-
-                <h3 class="project-title">
-                    An Interpretation of Room 1695 of the Bob and Betty Beyster Building
-                </h3>
-                <p class="project-description">
-                    September 11th, 2023 - October 2nd, 2023
-                    Presenting a Virtual Reality project created by Jamie Zhou and Sohavni Singh.
-
-                    We simulated a room in the Bob and Betty Beyster Building, adding objects, materials, and
-                    interactions that one may find a likeness to in the real room. During the process, we improved our
-                    understanding of VR interactions
-                    and learned to prioritize tasks by completing a large project in small chunks.
-
-
-                </p>
-                <p class="project-skills">
-                    Technologies utilized in the making of the project:
-                    Unreal Engine 5: Game Development Engine, with ability to insert 3D objects (I used Sketchfab) and
-                    audio (freesound.org)
-                    as components of the game.
-                    Blueprints: easily add changes to functionality onto multiple existing objects of the same Blueprint
-                    Class type.
-                    Materials/Textures
-                    Modeling Mode: customizing 3D objects
-                    Jira: team project management tool, used to asynchronous track task updates and completion with my
-                    project partner.
-                </p>
-                <p class="project-contributions">
-                <ul>
-                    <li>Blocked out basic area structure, then added more detailed materials, textures, and assets</li>
-                    <li>Created blueprint affordance for exiting the game (line trace and trigger at door)</li>
-                    <li>Added animation to passerby 3d model (walking duck)</li>
-                    <li>Implemented whiteboard interaction</li>
-                    <li>Created affordance such that when user interacts with wall fliers, URL opens in browser</li>
-                    <li>When user interacts with objects, a day-night progression cycles</li>
-                    <li>When user has debugged, transports pawn outside to see fireworks</li>
-
-                </ul>
-                </p>
-                <p class="project-additional-info">
-                    Our custom objects are giant ducks, and two buttons that kickstart two different events. The first
-                    event occurs when the
-                    user interacts with the “Yes” button. In that case, the player is teleported outside of the room, as
-                    fireworks set off.
-                    Outside, the player not only gets to enjoy the fresh air that they have been so deprived of as a CS
-                    student, but also
-                    bewitch themselves with a beautiful firework spectacle, which they may prolong by interacting with
-                    the giant rubber
-                    ducks. They are finally finished with their EECS project, having successfully debugged and escaped
-                    the prison of their
-                    own doing (AKA bad code).
-
-                    The second event occurs when the user interacts with the “No” button. In this case, all the all the
-                    actors of the BBB
-                    get destroyed (they have not debugged to a satisfactory extent yet!!!). Ducks come falling in from
-                    the sky like the
-                    apocalypse, and there’s fire everywhere. The student then is left to regret their decision to press
-                    No, as they now have
-                    to finish their EECS project both without computers, and with too many debugging ducks.
-                </p>
-
-            </div>
-
-        </div>
-        <!-- <div class="footer">
-            <h1>Contact</h1>
-        </div> -->
-        <h1>Disclaimer: website still in progress!</h1>
-
-
-
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
     </body>
 
 </html>

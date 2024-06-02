@@ -1,0 +1,81 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inria Serif", serif;
+}
+.home-header {
+  padding: 50px 50px 0px 50px;
+  height: max-content;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+.home-title {
+  float: left;
+  width: 40%;
+}
+
+.home-short-intro {
+  position: relative;
+  width: 50%;
+  height: auto;
+  float: right;
+}
+
+.image-container {
+  width: 24rem;
+  height: 24rem;
+  overflow: hidden;
+  border-radius: 50%; /* Creates circular shape */
+  position: relative;
+
+  z-index: 1;
+}
+.image-container img {
+  width: 25rem;
+  height: auto;
+  object-fit: cover;
+}
+
+.home-short-intro .introduction {
+  position: absolute;
+  top: 80px;
+  left: 200px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust background color and opacity */
+  color: white; /* Text color */
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 2;
+  width: 60%;
+}
+
+.main {
+  margin-top: 100px;
+}
+
+.table-of-contents {
+  padding-left: 100px;
+}
+.chapter {
+  margin-bottom: 40px;
+}
+.chapter-title {
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+.dashed-line {
+  flex-grow: 1;
+  border-bottom: 2px dashed #000; /* Dashed line style */
+  margin-left: 10px; /* Space between text and line */
+  margin-right: 140px;
+}

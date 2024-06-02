@@ -1,0 +1,2 @@
+in index
+    - the header part should be horizontally justified

@@ -1,0 +1,37 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inria Serif", serif;
+}
+
+.page-title {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+}
+.projects {
+  width: 75%;
+  margin: 0 auto;
+}
+.project {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.video,
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Alternate between left video and right text, and right video and left text */
+.project:nth-child(even) .video-text-wrapper {
+  flex-direction: row-reverse; /* Reverse order for even-indexed projects */
+}
+
+@media (min-width: 768px) {
+  /* Apply styling for larger screens if needed */
+}

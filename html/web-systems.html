@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Web Systems</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="../style/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap">
+
+    </head>
+
+
+
+    <body>
+
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+            <button class="w3-bar-item w3-button w3-large" onclick="close_sidebar()"><img src="../images/books-menu.png"
+                    style="width:45px;"> </button>
+            <a href="../index.html" class="w3-bar-item w3-button">Archive</a>
+            <a href="#" class="w3-bar-item w3-button">Web Systems</a>
+            <a href="./operating-systems.html" class="w3-bar-item w3-button">Operating Systems</a>
+        </div>
+
+        <div id="main">
+
+            <div class="nav">
+
+                <button id="openNav" class="w3-button" onclick="open_sidebar()"><img src="../images/books-menu.png"
+                        style="width:45px;"></button>
+
+            </div>
+
+
+            <h1 class="page-title">Web Systems</h1>
+            <div class="projects">
+                <div class="project">
+                    <h3>Mission Control Center</h3>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CDE8brlaWrQ?si=GLBFrlvMQ1_DD8f1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="text">I’m in this club called the Collaborative Lab for Advancing work in space,
+                        and
+                        we enter the NASA
+                        SUITS
+                        challenge, which
+                        challenges students to design and develop spacesuit information displays within augmented
+                        reality (AR)
+                        environments,
+                        every year. The Mission Control Center was created for the NASA SUITS challenge. The MCC
+                        displays
+                        astronaut vitals,
+                        location of astronauts and landmarks, communication, and navigation. It is built with React.js
+                        on the
+                        frontend, and
+                        Node.js/Websocket on the backend, receiving telemetry stream–or data–from two Microsoft
+                        HoloLens.
+
+                        I worked on the frontend of this project, specifically the search box that filters upon
+                        astronaut,
+                        waypoint, and
+                        geosample names; importing the google maps api and using bootstrap components such as modals to
+                        add
+                        waypoints.
+
+                        In the club, we’re divided into subteams—so like, an AR, UI/UX, web, hardware, etc—and used a
+                        scrum
+                        framework. I was
+                        scrum master of the vitals features, so I coordinated among all the teams, kept track of
+                        everyone’s
+                        progress, and kept
+                        us focused on the task.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            function open_sidebar() {
+                document.getElementById("main").style.marginLeft = "25%";
+                document.getElementById("mySidebar").style.width = "25%";
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("openNav").style.display = 'none';
+            }
+            function close_sidebar() {
+                document.getElementById("main").style.marginLeft = "0%";
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("openNav").style.display = "inline-block";
+            }
+        </script>
+
+    </body>
+    <footer>
+        <hr />
+        <a target="_blank" href="https://icons8.com/icon/42366/books">Books</a> icon by <a target="_blank"
+            href="https://icons8.com">Icons8</a>
+    </footer>
+
+</html>
