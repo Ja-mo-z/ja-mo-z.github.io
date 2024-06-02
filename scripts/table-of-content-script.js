@@ -8,6 +8,19 @@ const chapters = [
       { title: "Map Reduce", link: "#" },
       { title: "Search Engine", link: "#" },
       { title: "SQL", link: "#" },
+      { title: "UI/UX", link: "#" },
+      { title: "Discord Bot", link: "#" },
+      { title: "An Archive in Progress", link: "#" },
+    ],
+  },
+  {
+    title: "Extended Reality",
+    link: "./html/extended-reality.html",
+    topics: [
+      { title: "DNAVR", link: "#" },
+      { title: "A2Go", link: "#" },
+      { title: "An Interpretation of 1695 BBB", link: "#" },
+      { title: "Simple Magic Show", link: "#" },
     ],
   },
   {
@@ -17,6 +30,56 @@ const chapters = [
       { title: "Thread Library", link: "#" },
       { title: "Memory Manager", link: "#" },
       { title: "File System", link: "#" },
+    ],
+  },
+  {
+    title: "Robotics",
+    link: "./html/robotics.html",
+    topics: [{ title: "LiDAR", link: "#" }],
+  },
+  {
+    title: "Computer Vision",
+    link: "./html/comp-vis.html",
+    topics: [
+      { title: "Image Resizing with Seam-Carving Algorithm", link: "#" },
+    ],
+  },
+  {
+    title: "Computer Organization and Algorithms",
+    link: "./html/comp-org-and-alg.html",
+    topics: [
+      { title: "Caching", link: "#" },
+      { title: "Pipelines", link: "#" },
+    ],
+  },
+  {
+    title: "Film and Media",
+    link: "./html/film-and-media.html",
+    topics: [
+      { title: "Just Keep Swimming Animation", link: "#" },
+      { title: "Art Process of a STAMPS Student", link: "#" },
+      { title: "The Thing Between Us Short Film", link: "#" },
+      { title: "Cece Promotional Video", link: "#" },
+      { title: "Saved Short Film", link: "#" },
+    ],
+  },
+  {
+    title: "Art",
+    link: "./html/art.html",
+    topics: [
+      { title: "Graphic Design", link: "#" },
+      { title: "Paintings", link: "#" },
+      { title: "Doodles", link: "#" },
+    ],
+  },
+  {
+    title: "Writing",
+    link: "./html/writing.html",
+    topics: [
+      { title: "Screenwriting", link: "#" },
+      { title: "Short stories", link: "#" },
+      { title: "Novels", link: "#" },
+      { title: "Poems", link: "#" },
     ],
   },
 ];

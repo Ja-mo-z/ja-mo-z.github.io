@@ -6,11 +6,22 @@ h5,
 h6 {
   font-family: "Inria Serif", serif;
 }
+a {
+  color: rgb(60, 87, 133);
+}
+.blue-bg-text {
+  background-color: rgb(60, 87, 133);
+  color: rgb(235, 237, 240);
+  padding-left: 10px;
+  border-radius: 5%;
+}
 .home-header {
-  padding: 50px 50px 0px 50px;
+  padding: 50px 50px 0px 120px;
   height: max-content;
   margin-bottom: 20px;
   overflow: auto;
+  /* background-color: rgb(107, 130, 168); */
+  /* background-image: linear-gradient(to bottom right, rgb(107, 130, 168), white); */
 }
 
 .home-title {
@@ -31,8 +42,8 @@ h6 {
   overflow: hidden;
   border-radius: 50%; /* Creates circular shape */
   position: relative;
-
   z-index: 1;
+  border: 10px solid rgb(60, 87, 133);
 }
 .image-container img {
   width: 25rem;
@@ -42,15 +53,10 @@ h6 {
 
 .home-short-intro .introduction {
   position: absolute;
-  top: 80px;
-  left: 200px;
+  top: 70px;
+  left: 400px;
   transform: translate(-50%, -50%);
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Adjust background color and opacity */
+  background-color: rgb(60, 87, 133);
   color: white; /* Text color */
   padding: 10px;
   border-radius: 5px;
@@ -78,4 +84,23 @@ h6 {
   border-bottom: 2px dashed #000; /* Dashed line style */
   margin-left: 10px; /* Space between text and line */
   margin-right: 140px;
+}
+
+#backToTopBtn {
+  display: none; /* Hide the button by default */
+  position: fixed; /* Fixed position so it stays in the same place even when scrolling */
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  right: 20px; /* Distance from the right side of the viewport */
+  z-index: 99; /* Ensure the button appears on top of other content */
+  padding: 10px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  background-color: rgb(60, 87, 133); /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove button border */
+  cursor: pointer; /* Set cursor to pointer on hover */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+}
+
+#backToTopBtn:hover {
+  background-color: #0056b3; /* Change background color on hover */
 }
