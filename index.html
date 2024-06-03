@@ -20,11 +20,13 @@ Resources: https://www.makeuseof.com/responsive-navigation-bar-using-html-and-cs
         <title>An Archive of Jamie Zhou</title>
 
         <script src="./tab-script.js"></script>
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="../style/index-style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
     </head>
@@ -33,13 +35,13 @@ Resources: https://www.makeuseof.com/responsive-navigation-bar-using-html-and-cs
         <div class="home-header">
             <div class="home-title">
                 <h1 style="font-size: 100px; margin:0px;">
-                    <div class="blue-bg-text">An Archive</div>In Progress
+                    An Archive<div class="blue-bg-text">In Progress</div>
                 </h1>
                 <h3 style="font-size: 30px; float:right;">of Jamie Zhou</h3>
             </div>
             <div class="home-short-intro">
                 <div class="image-container">
-                    <img src="./images/jamie_with_statue.jpg" alt="Image of Jamie posing next to a clay statue">
+                    <img src="./assets/jamie_with_statue.jpg" alt="Image of Jamie posing next to a clay statue">
                 </div>
 
                 <p class="introduction">
@@ -49,53 +51,85 @@ Resources: https://www.makeuseof.com/responsive-navigation-bar-using-html-and-cs
                     innovative and impactful experiences that blend technology and storytelling. I bring a unique
                     perspective to projects, bridging the gap between creativity and technical
                     execution.
-                    <!-- I've been heavily involved in a variety of extended reality (XR) projects, from virtual reality
-                    films to interactive
-                    experiences. These projects have allowed me to explore the possibilities of immersive storytelling
-                    and push the
-                    boundaries of traditional media. I thrive in collaborative environments where I can contribute my
-                    technical skills while
-                    also leveraging my creative instincts to bring ideas to life.
-                    I'm excited about the opportunity to work on cutting-edge projects and contribute to pushing the
-                    boundaries of what's
-                    possible in technology and entertainment. Let's create something cool together! -->
                 </p>
             </div>
         </div>
 
 
+
+
+
         <div class="main mt-0">
-            <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#tableOfContents">Table of Contents</a></li>
-                <li><a data-toggle="tab" href="#about">About</a></li>
+
+            <ul class="nav nav-tabs mb-5"
+                style="margin-left: 70px; margin-right:70px; font-size:18px; font-family: Inria Serif, serif;">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#tableOfContents">Table of Contents</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#about">About</a>
+                </li>
             </ul>
 
             <div class="tab-content">
-                <div class="table-of-contents" id="tableOfContents tab-pane fade in active">
-                    <script src="./scripts/table-of-content-script.js"></script>
+                <div id="tableOfContents" class="container tab-pane fade show active">
+                    <div class="table-of-contents" style="margin-left: 70px; margin-right:70px;">
+                        <script src="./scripts/table-of-content-script.js"></script>
 
+
+                    </div>
                 </div>
-                <div id="about" class="tab-pane fade">
+
+
+                <div id="about" class="container tab-pane fade ">
                     <h5>Contact</h5>
+                    <div class="ml-5">
+                        <p>Email: <a href="jamizh@umich.edu">jamizh@umich.edu</a></p>
+                        <p>Linkedin: <a
+                                href="https://www.linkedin.com/in/zhou-jamie/">https://www.linkedin.com/in/zhou-jamie/</a>
+                        </p>
+                    </div>
+
                     <h5>Resume</h5>
+                    <div class="ml-5">
+                        <object class="pdf" data="./assets/resume.pdf" width="100%" height="1000px">
+                        </object>
+
+                    </div>
+
                 </div>
-
-
             </div>
 
 
 
 
-            <!-- <ul class="nav nav-tabs mr-5 ml-5 mb-5">
+
+
+            <!-- <ul class="nav nav-tabs mb-5"
+                style="margin-left: 200px; margin-right:200px; font-size:18px; font-family: Inria Serif, serif;">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Table Of Contents</a>
+                    <a class="nav-link active" data-toggle="tab" href="#tableOfContents">Table of Contents</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" data-toggle="tab" href="#about">About</a>
                 </li>
+
             </ul>
 
-          -->
+            <div class="tab-content">
+                <div id="tableOfContents " class="container table-of-contents ">
+                    <script src="./scripts/table-of-content-script.js"></script>
+
+                </div>
+
+                <div id="about" class="container tab-pane fade">
+                    <h5>Contact</h5>
+                    <h5>Resume</h5>
+
+                </div>
+
+            </div> -->
+
         </div>
         <button onclick="topFunction()" id="backToTopBtn" title="Go to top">Top</button>
         <script>
@@ -117,6 +151,31 @@ Resources: https://www.makeuseof.com/responsive-navigation-bar-using-html-and-cs
                 document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
             }
 
+            $(document).ready(function () {
+                // Check localStorage for active tab
+                var activeTab = localStorage.getItem('activeTab');
+                if (activeTab) {
+                    $('.nav-link[href="' + activeTab + '"]').tab('show');
+                } else {
+                    $('#tableOfContentsTab').tab('show');
+                }
+
+                // Set the active tab on click
+                $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                    var target = $(e.target).attr("href"); // Get the href attribute of the active tab
+                    localStorage.setItem('activeTab', target);
+
+                    // Load the script dynamically
+                    if (target === "#tableOfContents") {
+                        if (!$("#tableOfContentsScript").length) { // Check if the script is already loaded
+                            var script = document.createElement("script");
+                            script.src = "./scripts/table-of-content-script.js";
+                            script.id = "tableOfContentsScript";
+                            document.body.appendChild(script);
+                        }
+                    }
+                });
+            });
         </script>
 
 
